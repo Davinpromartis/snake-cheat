@@ -20,7 +20,7 @@
     <body>
         <h1>Snake Game</h1>
         <p>Score :  <span id="score"> </span></p>
-        <canvas width="400" height="400" id="game" style="background-color : palegreen"></canvas>
+        <canvas width="400" height="400" id="game" style="background-color : rgb(251, 226, 152)"></canvas>
     </body>
 
     <script>
@@ -37,7 +37,7 @@
             dx: grid,
             dy: 0,
             cells: [], 
-            maxCells: 100
+            maxCells: 4
         };
 
         // make object apple as food
@@ -114,7 +114,7 @@
                 snake.x = 160;
                 snake.y = 160;
                 snake.cells = [];
-                snake.maxCells = 100;
+                snake.maxCells = 4;
                 snake.dx = grid;
                 snake.dy = 0;
                 apple.x = getRandomInt(0, 25) * grid;
